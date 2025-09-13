@@ -16,7 +16,7 @@
 # If you're looking for the configuration for the remote backend, you can find that
 # in backend.tf.
 
-
+/*
 resource "fakewebservices_vpc" "primary_vpc" {
   name       = "Primary VPC"
   cidr_block = "0.0.0.0/1"
@@ -34,7 +34,7 @@ resource "fakewebservices_load_balancer" "primary_lb" {
   name    = "Primary Load Balancer"
   servers = fakewebservices_server.servers[*].name
 }
-
+*/
 resource "fakewebservices_database" "prod_db" {
   name = "Production DB"
   size = 256
